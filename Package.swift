@@ -14,7 +14,7 @@ let package = Package(
         .binaryTarget(
             name: "TrustWalletCore",
             url: "https://walletcore.imfast.io/TrustWalletCore.xcframework.zip",
-            checksum: "95ebb1581038280b3550e15fa669e7a595f7e6d22fb64773ef2ae4e0e18e7cfa"
+            checksum: "2345dc57a7c29c29e2d75d194174a006364fcb19ddcc5041c6d872c5de009b97"
         )
     ]
 )
