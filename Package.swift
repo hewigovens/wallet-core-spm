@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "TrustWalletCore", targets: ["TrustWalletCore"])
     ],
     dependencies: [
-        .package(name: "SwiftProtobuf", url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0"),
+        .package(name: "SwiftProtobuf", url: "https://github.com/hewigovens/swift-protobuf.git", .branch("dynamic")),
     ],
     targets: [
         .binaryTarget(

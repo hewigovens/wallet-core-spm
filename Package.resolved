@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "SwiftProtobuf",
-        "repositoryURL": "https://github.com/apple/swift-protobuf.git",
+        "repositoryURL": "https://github.com/hewigovens/swift-protobuf.git",
         "state": {
-          "branch": null,
-          "revision": "f33185acd089405d365982ccab2f58469052a545",
-          "version": "1.10.2"
+          "branch": "dynamic",
+          "revision": "3b4b93b1ba5edb8a9cf183796a662a20f74fb8b4",
+          "version": null
         }
       }
     ]
