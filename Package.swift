@@ -4,9 +4,10 @@ import PackageDescription
 
 let package = Package(
     name: "WalletCore",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "WalletCore", targets: ["WalletCore", "SwiftProtobuf"]
+            name: "WalletCore", type: .dynamic, targets: ["WalletCore", "SwiftProtobuf"]
         )
     ],
     dependencies: [
