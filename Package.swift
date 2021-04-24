@@ -5,15 +5,22 @@ import PackageDescription
 let package = Package(
     name: "WalletCore",
     products: [
-        .library(name: "WalletCore", targets: ["WalletCore"])
+        .library(
+            name: "WalletCore", targets: ["WalletCore", "SwiftProtobuf"]
+        )
     ],
     dependencies: [
     ],
     targets: [
         .binaryTarget(
             name: "WalletCore",
-            url: "https://github.com/hewigovens/wallet-core-spm/releases/download/0.0.1/core+protobuf.zip",
-            checksum: "5bd3959f58ef80515ba05922b00608293533a689a597fff1b43563f880c58d0a"
+            url: "https://github.com/hewigovens/wallet-core-spm/releases/download/0.0.1/WalletCore.xcframework.zip",
+            checksum: "c524cfcd8a6a811f40fb7f5dadfd671944da0c70d78befbec43f4b81a7b7cd47"
+        ),
+        .binaryTarget(
+            name: "SwiftProtobuf",
+            url: "https://github.com/hewigovens/wallet-core-spm/releases/download/0.0.1/SwiftProtobuf.xcframework.zip",
+            checksum: "270a6545f72a512aafc7d7ecb73621005248d4ea44f7ebbc06a2f33c7d15bc4c"
         )
     ]
 )
