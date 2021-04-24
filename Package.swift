@@ -3,18 +3,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "TrustWalletCore",
+    name: "WalletCore",
     products: [
-        .library(name: "TrustWalletCore", targets: ["TrustWalletCore"])
+        .library(name: "WalletCore", targets: ["WalletCore"])
     ],
     dependencies: [
-        .package(name: "SwiftProtobuf", url: "https://github.com/hewigovens/swift-protobuf.git", .branch("dynamic")),
     ],
     targets: [
         .binaryTarget(
-            name: "TrustWalletCore",
-            url: "https://walletcore.imfast.io/TrustWalletCore.xcframework.zip",
-            checksum: "2345dc57a7c29c29e2d75d194174a006364fcb19ddcc5041c6d872c5de009b97"
+            name: "WalletCore",
+            url: "https://github.com/hewigovens/wallet-core-spm/releases/download/0.0.1/core+protobuf.zip",
+            checksum: "5bd3959f58ef80515ba05922b00608293533a689a597fff1b43563f880c58d0a"
         )
     ]
 )
