@@ -7,7 +7,7 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "WalletCore", type: .dynamic, targets: ["WalletCore", "SwiftProtobuf"]
+            name: "WalletCore", targets: ["WalletCore", "SwiftProtobuf"]
         )
     ],
     dependencies: [
