@@ -21,7 +21,13 @@ let package = Package(
             dependencies: ["SwiftProtobuf", "WalletCoreCommon"],
             path: "Sources",
             exclude: [
-                "SecRandom.m"
+                "SecRandom.m",
+                "Generated/WalletCore.h"
+            ],
+            sources: [
+                "Generated/Enums",
+                "Generated/Protobuf",
+                "SecRandow.swift"
             ],
             cSettings: [
                 .headerSearchPath("include")
